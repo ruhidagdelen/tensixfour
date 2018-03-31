@@ -1,0 +1,127 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>1064 Games</title>
+    <!-- stylesheet -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/animate/animate.min.css' %}" rel="stylesheet">
+    <!-- plugins -->
+    <link href="{% static 'plugins/ytplayer/jquery.mb.YTPlayer.min.css' %}" rel="stylesheet">
+    <!-- theme stylesheet -->
+    <link href="{% static 'css/theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+    <script src="{% static 'plugins/jquery/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+  </head>
+  <body class="fixed-header">
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div class="navbar-backdrop">
+          <div class="navbar">
+            <div class="navbar-left">
+              <a href="#" class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="1064 Games Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    
+        <section 
+        class="bg-image bg-image-sm section-streamer player p-y-65 forDesktop" 
+        style="height: auto;" 
+        data-property="{videoURL:'https://youtu.be/X-wH9g4fxdg', containment:'body', mute:true, stopMovieOnBlur:false, showControls: false, realfullscreen: true, showYTLogo: false, quality: 'hd720', autoPlay:true, loop:true, opacity:1, optimizeDisplay: true }">
+        </section>
+    
+      <div class="forMobile center">
+        <div class="col-xs-12 col-lg-12">
+           <div class="video-container"><iframe width="420" height="345" src="http://www.youtube.com/embed/X-wH9g4fxdg?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+       </div>
+
+
+
+    <section>
+        <div class="footer-bottom">
+            <div class="topright footer-social">
+            <a href="https://www.facebook.com/thechemistgame/ " target="_blank" data-toggle="tooltip" title="facebook">
+              <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/thechemistgame" target="_blank" data-toggle="tooltip" title="twitter">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/thechemistgame/" target="_blank" data-toggle="tooltip" title="instagram">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCkWtoTO2njs2UsKWR3kdthQ" target="_blank" data-toggle="tooltip" title="youtube">
+              <i class="fa fa-youtube fa-2x"></i>
+            </a>
+            </div>
+          </div>
+    </section>
+    <!-- scripts -->
+    <script type="application/ld+json">
+      {  
+        "@context": "http://schema.org",
+        "@type":"VideoGame",
+        "name":[
+          {
+            "@language":"en",
+            "@value":"The Chemist"
+          }
+        ],
+        "description":[
+          {
+            "@language":"en",
+            "@value":"Need to pay rent? Got no money and want to make some easily? Try chemistry! After all, it’s as easy as mixing one thing into another. Navigating through events that range from changing the world to petting a kitty, you’ll be making many decisions as you try to become the lord of all things liquid."
+          }
+        ],
+        "genre":[
+          "Role Playing",
+          "First-person maker"
+        ],
+        "url":"http://www.tensixfour.com/thechemist",
+        "image":"http://www.tensixfour.com/static/img/poster.png",
+        "screenshot":"http://www.tensixfour.com/static/img/background.png",
+        "sameAs": [
+          "https://www.youtube.com/channel/UCkWtoTO2njs2UsKWR3kdthQ"
+        ],
+        "trailer":{
+          "@type":"VideoObject",
+          "url":"https://www.youtube.com/watch?v=Zh2unrBz2qk",
+          "inLanguage":"en",
+          "description":"asukdskdjs",
+          "name":"thechemist",
+          "thumbnailUrl":"https://img.youtube.com/vi/Zh2unrBz2qk/2.jpg",
+          "uploadDate":"01/08/2017"
+        },
+        "operatingSystem":"windows",
+        "applicationCategory":"Roleplaying Game"
+    }
+    </script>
+    <script src="{% static 'plugins/ytplayer/jquery.mb.YTPlayer.min.js' %}"></script>
+    <script>
+      (function($)
+      {
+        "use strict";
+        $(".player").mb_YTPlayer();
+      })(jQuery);
+    </script>
+    <script src="{% static 'js/theme.min.js' %}"></script>
+    <script src="{% static 'plugins/cookie/js.cookie.js' %}"></script>
+    
+  </body>
